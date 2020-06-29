@@ -12,11 +12,11 @@ class Author
     end 
   end 
   
-  def add_post(title)
-   song.artist = self 
+  def add_post(post)
+   post.author = self 
   end 
   
-  def add_song_by_name(song_name)
+  def add_post_by_name(song_name)
     singer = Song.new(song_name)
     add_song(singer)
   end 
