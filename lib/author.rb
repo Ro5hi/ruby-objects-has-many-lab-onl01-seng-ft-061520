@@ -8,6 +8,7 @@ class Author
   
   def posts
     Posts.all.select do |post|
+    end
   end 
   
   def add_post(post)
