@@ -8,7 +8,7 @@ class Author
   end 
   
   def posts
-    binding.pry
+    # binding.pry
     posts.all.select do |post|
       post.author == self
     end 
