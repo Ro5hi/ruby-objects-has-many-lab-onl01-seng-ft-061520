@@ -1,3 +1,4 @@
+require 'pry'
 class Author 
   
   attr_accessor :name 
@@ -7,13 +8,14 @@ class Author
   end 
   
   def posts
+    binding.pry
     Posts.all.select do |post|
-    end
+      post.author == self
+    end 
   end 
   
   def add_post(post)
-   
-   
+   post.author = self 
   end 
   
   def add_post_by_title(post_title)
